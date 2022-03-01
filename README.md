@@ -12,12 +12,14 @@ Priorita
 2.  *, /, %
 3. +, -
 
+## Funkce
+zaokrouhlování: round(a), ceil(a)
+
+absolutní hodnota: abs(a)
+
 ## Příklady inicializace proměnných
 int num = 5
 
 float a = 5,555
 
-## Funkce
-zaokrouhlování: round(a), ceil(a)
 
-absolutní hodnota: abs(a)
