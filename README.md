@@ -3,7 +3,17 @@
 # Úloha 1 - Vlastní jazyk
 
 Datové typy: int [32bit], float [32bit]
-Operace: sčítání [+], odečítání [-], násobení [*], závorky [(,)], inkrementace [++], dekrementace [--]
+Operace: sčítání [+], odečítání [-], násobení [*], závorky [(,)], inkrementace [++], dekrementace [--], modulo [%]
+
+Priorita
+* ++, --
+* *, /, %
+* +, -
 
 ## Příklady inicializace proměnných
-int num = 8
+int num = 5
+float a = 5,555
+
+## Funkce
+zaokrouhlování: ceil(a), round(a)
+absolutní hodnota: abs(a)
