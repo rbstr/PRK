@@ -8,9 +8,9 @@ Datové typy: int [32bit], float [32bit]
 Operace: sčítání [+], odečítání [-], násobení [*], závorky [(,)], inkrementace [++], dekrementace [--], modulo [%]
 
 Priorita
-* 1. ++, --
-* 2. *, /, %
-* 3. +, -
+1.  ++, --
+2.  *, /, %
+3. +, -
 
 ## Příklady inicializace proměnných
 int num = 5
