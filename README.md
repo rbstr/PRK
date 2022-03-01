@@ -18,5 +18,6 @@ int num = 5
 float a = 5,555
 
 ## Funkce
-zaokrouhlování: ceil(a), round(a)
+zaokrouhlování: round(a), ceil(a)
+
 absolutní hodnota: abs(a)
