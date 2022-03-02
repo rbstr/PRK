@@ -2,7 +2,7 @@
 
 # TASK 01 - Vlastní jazyk
 
-##Datové typy
+## Datové typy
 
 int [32-bit] (0-9)
 
