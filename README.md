@@ -2,10 +2,16 @@
 
 # TASK 01 - Vlastní jazyk
 
-Datové typy: int [32-bit] (0-9), float [32-bit] (0-9 + "," + 0-9)
+##Datové typy
+
+int [32-bit] (0-9)
+
+float [32-bit] (0-9 + "," + 0-9)
 
 
-Operace: sčítání [+], odečítání [-], násobení [*], dělení [/], závorky [(,)], inkrementace [++], dekrementace [--], modulo [%]
+##Operace
+
+sčítání [+], odečítání [-], násobení [*], dělení [/], závorky [(,)], inkrementace [++], dekrementace [--], modulo [%]
 
 Priorita
 1.  ++, --
