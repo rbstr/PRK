@@ -2,7 +2,7 @@
 
 # TASK 01 - Vlastní jazyk
 
-Datové typy: int [32bit], float [32bit]
+Datové typy: int [32-bit], float [32-bit]
 
 
 Operace: sčítání [+], odečítání [-], násobení [*], závorky [(,)], inkrementace [++], dekrementace [--], modulo [%]
