@@ -17,9 +17,18 @@ zaokrouhlování: round(a), ceil(a)
 
 absolutní hodnota: abs(a)
 
-## Příklady inicializace proměnných
-int num = 5
+## Příklady validních dat
+int num = 5, int num = 0
 
 float a = 5,555
+
+## Příklady nevalidních dat
+int num = 5.5
+
+int num = 00,5
+
+float a = 5.5
+
+
 
 
