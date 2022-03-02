@@ -9,7 +9,7 @@ int [32-bit] (0-9)
 float [32-bit] (0-9 + "," + 0-9)
 
 
-##Operace
+## Operace
 
 sčítání [+], odečítání [-], násobení [*], dělení [/], závorky [(,)], inkrementace [++], dekrementace [--], modulo [%]
 
