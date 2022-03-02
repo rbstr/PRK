@@ -5,7 +5,7 @@
 Datové typy: int [32-bit], float [32-bit]
 
 
-Operace: sčítání [+], odečítání [-], násobení [*], závorky [(,)], inkrementace [++], dekrementace [--], modulo [%]
+Operace: sčítání [+], odečítání [-], násobení [*], dělení [/], závorky [(,)], inkrementace [++], dekrementace [--], modulo [%]
 
 Priorita
 1.  ++, --
