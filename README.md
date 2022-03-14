@@ -43,27 +43,33 @@ float a = 5.5, float a = -5,5
 
 S využitím ANTLR.
 
+## Gramatika
+
 ```
 grammar g;
 
-g:	line+;
-
-line:	expr                            # expression
-    |	var ID '='                      # assign
-    |   NEWLINE                         # blank
+g:	line*;
+line:	expr LOL                    # expression
+    |	decl LOL		            # declare
+    |   NEWLINE                     # blank
     ;
 
 var:	'int' | 'float';
+decl:	var name '=' expr;
+name:	ID;
 
 expr:   expr op=('*'|'/'|'%') expr      # mulDivMod
     |   expr op=('+'|'-') expr          # addSub
     |   op=('++'|'--') expr             # incPre
     |   expr op=('++'|'--')             # incPost
     |	'abs(' expr ')'                 # abs
+    |   'ceil(' expr ')'                # ceil
     |   'round(' expr ')'               # round
     |   '('expr')'                      # parenth
     |   FLOAT                           # float
     |   INT                             # int
+    |	name '=' expr			        # assignment
+    |	name				            # variable
     ;
 
 MUL:    '*';
@@ -77,11 +83,28 @@ DEC:    '--';
 WHITESPACE: (' ' | '\t') -> skip;
 ID: [a-zA-Z]+;
 INT: NUMBER+ ;
-FLOAT: NUMBER+ (COMMA NUMBER+)? ;
-NEWLINE: [\r\n]+ ;
+FLOAT: NUMBER+ (COMMA NUMBER+)?;
+NEWLINE: [\r\n]+;
+LOL : ' lol';
 
-fragment NUMBER: ('0' .. '9') ;
+fragment NUMBER: ('0' .. '9');
 fragment COMMA: (',') ;
+
+```
+
+## Testovací data
+
+```
+* number = 5 lol
+* 1 lol
+* 1 + 2 lol
+* 18-- lol
+* abs(4-5) lol
+* 1 + (--10) * (ceil(3,4-2,5)%2)
+* 5,6*2,00
+* int number = (20+5)-- lol
+* number + ceil(0,1) % 1 lol
+* number = number + 11 lol
 
 ```
 
