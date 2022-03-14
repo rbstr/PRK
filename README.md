@@ -50,8 +50,7 @@ name:	ID;
 
 expr:   expr op=('*'|'/'|'%') expr      # mulDivMod
     |   expr op=('+'|'-') expr          # addSub
-    |   op=('++'|'--') expr             # incPre
-    |   expr op=('++'|'--')             # incPost
+    |   expr op=('++'|'--')             # incDec
     |	'abs(' expr ')'                 # abs
     |   'ceil(' expr ')'                # ceil
     |   'round(' expr ')'               # round
@@ -92,7 +91,7 @@ number = 5 lol
 1 + 2 lol
 18-- lol
 abs(4-5) lol
-1 + (--10) * (ceil(3,4-2,5)%2) lol
+1 + (10--) * (ceil(3,4-2,5)%2) lol
 5,6*2,00 lol 
 int number = (20+5)-- lol
 number + ceil(0,1) % 1 lol
@@ -105,7 +104,7 @@ number = number + 11 lol
 ```
 -1
 4.4 lol
---54
+--54 lol
 
 ```
 
