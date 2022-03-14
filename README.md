@@ -16,28 +16,18 @@ sčítání [+], odečítání [-], násobení [*], dělení [/], závorky [(,)]
 Priorita
 1.  ++, --
 2.  *, /, %
-3. +, -
+3.  +, -
 
 ## Funkce
 zaokrouhlování: round(a), ceil(a)
 
 absolutní hodnota: abs(a)
 
-## Příklady validních dat
-int num = 5, int num = 0
-
-float a = 5,555
-
-## Příklady nevalidních dat
-int num = 5.5, int num = -5
-
-int num = 00,5
-
-float a = 5.5, float a = -5,5
-
 ## Správný výraz
 
-(a * b) / abs(a++) + ceil(round(a--) % b) 
+Ukončující znak/výraz: 'lol'
+
+(a * b) / abs(a++) + ceil(round(a--) % b) lol
 
 # TASK 02 - Definuj gramatiku
 
@@ -94,17 +84,28 @@ fragment COMMA: (',') ;
 
 ## Testovací data
 
+# Validní data
+
 ```
-* number = 5 lol
-* 1 lol
-* 1 + 2 lol
-* 18-- lol
-* abs(4-5) lol
-* 1 + (--10) * (ceil(3,4-2,5)%2)
-* 5,6*2,00
-* int number = (20+5)-- lol
-* number + ceil(0,1) % 1 lol
-* number = number + 11 lol
+number = 5 lol
+1 lol
+1 + 2 lol
+18-- lol
+abs(4-5) lol
+1 + (--10) * (ceil(3,4-2,5)%2) lol
+5,6*2,00 lol 
+int number = (20+5)-- lol
+number + ceil(0,1) % 1 lol
+number = number + 11 lol
+
+```
+
+## Nevalidní data
+
+```
+-1
+4.4 lol
+--54
 
 ```
 
