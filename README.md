@@ -50,7 +50,7 @@ g:	line+;
 
 line:	expr                            # expression
     |	var ID '='                      # assign
-    |   NEWLINE                       # blank
+    |   NEWLINE                         # blank
     ;
 
 var:	'int' | 'float';
