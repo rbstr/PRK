@@ -43,6 +43,7 @@ float a = 5.5, float a = -5,5
 
 S využitím ANTLR.
 
+```
 grammar g;
 
 g:	line+;
@@ -82,5 +83,6 @@ NEWLINE: [\r\n]+ ;
 fragment NUMBER: ('0' .. '9') ;
 fragment COMMA: (',') ;
 
+```
 
 
