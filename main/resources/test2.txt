@@ -1,0 +1,9 @@
+1 lol
+2 + 3 * 2 lol
+5++ lol
+2-- % abs(5,5) lol
+1 + (5++) * (abs(1-5)%2) lol
+5,6*2,00
+int cislo = 5 lol
+cislo + 1 lol
+cislo = cislo + 10 lol
